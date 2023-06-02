@@ -6,19 +6,17 @@ public class Example
     {
         string str = Console.ReadLine();
         string result = "";
-
-        for (int i = 0; i < str.Length; i++)
+        
+        for(int i = 0; i  < str.Length; i++)
         {
             char c = str[i];
-            
-            if (char.IsLower(c))
+            if(char.IsLower(c))
                 result += char.ToUpper(c);
-            else if (char.IsUpper(c))
+            else if(char.IsUpper(c))
                 result += char.ToLower(c);
-            else
+            else 
                 result += c;
         }
-
         Console.WriteLine(result);
     }
 }
